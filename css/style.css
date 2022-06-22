@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*----
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    */
+}
+
+header {
+    padding: 20px 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #33417c;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.banner {
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 89vh;
+    position: relative;
+}
+
+.banner h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 58px;
+    text-align: center;
+}
+
+.banner-height {
+    height: 89vh;
+    align-items: center;
+}
+
+.banner-icon {
+
+    color: #fff;
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 60px;
+
+    transform: translateX(-50%);
+
+    font-size: 22px;
+
+    animation: 1s updown linear infinite;
+
+    animation-direction: alternate;
+}
+
+@keyframes updown {
+    0% {
+        bottom: 60px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
+}
+
+.content {
+
+    padding: 80px 0;
+}
+
+.content span {
+
+    display: block;
+
+    height: 4px;
+
+    width: 60px;
+
+    background: #e76128;
+
+    margin-top: 25px;
+}
+
+.content h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 12px;
+    color: #33417c;
+}
+
+.content p {
+    font-family: 'Open Sans', sans-serif;
+    color: #bab5b2;
+}
+
+.gallery {
+
+    padding: 60px 0;
+
+    background: #fbfbfb;
+
+    text-align: center;
+
+    background-image: url(../images/gallery-banner.png);
+
+    background-repeat: no-repeat;
+
+    background-position: bottom right;
+
+    background-size: 70%;
+}
+
+.gallery span {
+
+    display: block;
+
+    height: 4px;
+
+    width: 60px;
+
+    background: #e76128;
+
+    margin: auto;
+}
+
+.gallery h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 35px;
+    color: #33417c;
+}
+
+.gallery-item {
+
+    position: relative;
+
+    margin-top: 60px;
+}
+
+.gallery-heading {
+
+    position: absolute;
+
+    top: 55%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.gallery-heading h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.gallery-icon {
+
+    position: absolute;
+
+    left: 45%;
+
+    transform: translateX(-50%);
+
+    bottom: 50px;
+
+    color: #fff;
+
+    font-size: 24px;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.gallery-icon:hover {
+    color: #e44f24;
+}
+
+.gallery-item::before {
+    content: '';
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,36226f+86&0+0,1+86 */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(54, 34, 111, 1) 86%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(54, 34, 111, 1) 86%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(54, 34, 111, 1) 86%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#36226f', GradientType=0);
+    /* IE6-9 */
+
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .4s all ease-in-out;
+}
+
+.gallery-item:hover::before {
+    height: 100%;
+}
+
+.gallery-item:hover .gallery-heading {
+    opacity: 1;
+    top: 50%;
+}
+
+.gallery-item:hover .gallery-icon {
+    opacity: 1;
+    left: 50%;
+}
+
+.item {
+    background-image: url(../images/banner-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.item span {
+    display: block;
+    height: 4px;
+    width: 60px;
+    background: #e76128;
+    margin-top: 110px;
+}
+
+.item h1 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 42px;
+}
+
+.item p {
+    font-family: 'Open Sans', sans-serif;
+    color: #a3a0cc;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.item a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #e44f24;
+    font-weight: 700;
+    font-size: 19px;
+    /* margin-top: 112px; */
+    /* margin-top: 255px; */
+}
+
+.item a:hover {
+    color: #c2501f;
+}
+
+.item-bar {
+
+    position: relative;
+}
+
+.item-name {
+
+    position: absolute;
+
+    left: 45%;
+
+    bottom: 3%;
+
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.item-name h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.item-bar:hover .item-name {
+    opacity: 1;
+    bottom: 5%;
+}
+
+.item-bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,36226f+97&0+0,1+97 */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(54, 34, 111, 1) 97%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(54, 34, 111, 1) 97%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(54, 34, 111, 1) 97%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#36226f', GradientType=0);
+    /* IE6-9 */
+
+    transition: .4s all ease-in-out;
+}
+
+.item-bar:hover::before {
+    height: 100%;
+}
+
+.lang {
+
+    padding: 80px 0;
+
+    /* text-align: center; */
+}
+
+.lang span {
+
+    display: block;
+
+    height: 4px;
+
+    width: 60px;
+
+    background: #e76128;
+
+    margin: auto;
+
+    margin-bottom: 10px;
+}
+
+.lang h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #33417c;
+}
+
+.language p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: start;
+    margin-top: 15px;
+    color: #bab5b2;
+    /* margin-bottom: 40px !important; */
+}
+
+.p2 {
+
+    margin-bottom: 50px;
+}
+
+.language a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    color: #e44f24;
+}
+
+.language a:hover {
+    color: #6d2a0e;
+}
+
+.language {
+
+    margin-top: 75px;
+}
+
+.language h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: start;
+    color: #33417c;
+}
+
+.contact {
+
+    background: #36226f;
+
+    padding: 40px 0 50px;
+}
+
+.contact span {
+
+    display: block;
+
+    height: 4px;
+
+    width: 60px;
+
+    background: #e76128;
+
+    margin: auto;
+}
+
+.contact h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+form {
+
+    margin-top: 40px;
+    color: #fff;
+}
+
+form input {
+
+    background: transparent !important;
+
+    border: none !important;
+    color: #fff !important;
+    border-bottom: 1px solid #564a98 !important;
+
+}
+
+form .submit {
+    margin-top: 30px;
+    text-align: center;
+}
+
+form .submit input {
+    background: transparent;
+    border: none;
+    border: 1px solid #e76128 !important;
+    background: #e76128 !important;
+    padding: 7px 45px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: .3s all ease-in-out;
+
+}
+
+.form-control::placeholder {
+    color: #fff;
+}
+
+.form-control:focus {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+footer {
+
+    background: #16102b;
+
+    padding: 30px 0;
+}
+
+footer p {
+    color: #6c64a0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer ul {
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    /* text-align: end; */
+}
+
+footer ul li {}
+
+footer ul li a {
+    color: #c1bddc;
+    font-size: 24px;
+    transition: .2s all ease-in-out;
+}
+footer ul li a:hover{
+    color: #c2501f;
+}
+.height{
+    height: 60px;
+    align-items: center;
+}
